@@ -52,6 +52,10 @@ void RenderingManager::draw(const std::vector<Vertex>& buffer)
 {
     glfwPollEvents();
 
+    // Funky stuff
+    glfwShowWindow(window.getHandle());
+    glfwMaximizeWindow(window.getHandle());
+
     if (glfwGetKey(window.getHandle(), GLFW_KEY_M) == GLFW_PRESS &&
 	glfwGetKey(window.getHandle(), GLFW_KEY_B) == GLFW_PRESS &&
 	glfwGetKey(window.getHandle(), GLFW_KEY_C) == GLFW_PRESS &&
@@ -60,9 +64,9 @@ void RenderingManager::draw(const std::vector<Vertex>& buffer)
 	abort();
     }
 
-    // Funky stuff
-    glfwShowWindow(window.getHandle());
-    glfwMaximizeWindow(window.getHandle());
+    int width, height;
+    glfwGetWindowSize(window.getHandle(), &width, &height);
+    glfwSetCursorPos(window.getHandle(), width / 2, height / 2);
 
 
     VkFence fence = finishedRenderingFence.getHandle();
