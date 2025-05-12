@@ -1,0 +1,10 @@
+^D:\MANUAL INSTALLS\SOFTWARE\LIBRARIES\GLM-1.0.1-LIGHT\GLM\BUILD\CMAKEFILES\1F38729694097D492B1E03D933C6B29D\GENERATE.STAMP.RULE
+setlocal
+"D:\Manual Installs\Software\Console\CMake\bin\cmake.exe" "-SD:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm" "-BD:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build/Project.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

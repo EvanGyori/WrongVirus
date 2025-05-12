@@ -1,0 +1,2 @@
+D:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build/CMakeFiles/ALL_BUILD.dir
+D:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build/CMakeFiles/ZERO_CHECK.dir

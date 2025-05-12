@@ -1,0 +1,10 @@
+^D:\MANUAL INSTALLS\SOFTWARE\LIBRARIES\GLM-1.0.1-LIGHT\GLM\CMAKELISTS.TXT
+setlocal
+"D:\Manual Installs\Software\Console\CMake\bin\cmake.exe" "-SD:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm" "-BD:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build" --check-stamp-file "D:/Manual Installs/Software/Libraries/glm-1.0.1-light/glm/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

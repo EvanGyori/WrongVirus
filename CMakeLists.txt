@@ -1,22 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
-project(WrongVirus2)
+project(WrongVirus LANGUAGES CXX)
 
-add_subdirectory(Utility)
-add_subdirectory(GLFWwrappers)
-add_subdirectory(VulkanWrappers)
-add_subdirectory(Rendering)
+find_package(glfw NAMES GLFW glfw3 REQUIRED)
 
-add_executable(wrongVirus main.cpp)
-target_link_libraries(wrongVirus PRIVATE Rendering)
 
-add_custom_command(TARGET wrongVirus POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${CMAKE_SOURCE_DIR}/Shaders/vert.spv"
-    "$<TARGET_FILE_DIR:wrongVirus>/vert.spv"
-)
-
-add_custom_command(TARGET wrongVirus POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-    "${CMAKE_SOURCE_DIR}/Shaders/frag.spv"
-    "$<TARGET_FILE_DIR:wrongVirus>/frag.spv"
-)
+add_executable(blackOps2 main.cpp)
+target_link_libraries(blackOps2 PRIVATE glfw "${CMAKE_SOURCE_DIR}/glew32s.lib" "${CMAKE_SOURCE_DIR}/OpenGL32.Lib")
