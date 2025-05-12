@@ -39,6 +39,14 @@
 !_TAG_KIND_DESCRIPTION!CMake	p,project	/projects/
 !_TAG_KIND_DESCRIPTION!CMake	t,target	/targets/
 !_TAG_KIND_DESCRIPTION!CMake	v,variable	/variable definitions/
+!_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	T,l4subsection	/level 4 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	c,chapter	/chapters/
+!_TAG_KIND_DESCRIPTION!Markdown	h,hashtag	/hashtags/
+!_TAG_KIND_DESCRIPTION!Markdown	n,footnote	/footnotes/
+!_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
+!_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
 !_TAG_KIND_DESCRIPTION!Yaml	a,anchor	/anchors/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
@@ -47,6 +55,7 @@
 !_TAG_PARSER_VERSION!C	1.1	/current.age/
 !_TAG_PARSER_VERSION!C++	1.1	/current.age/
 !_TAG_PARSER_VERSION!CMake	0.0	/current.age/
+!_TAG_PARSER_VERSION!Markdown	1.1	/current.age/
 !_TAG_PARSER_VERSION!Yaml	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	D:/42/Art/Programs/C++/New/WrongVirus2/src/	//
@@ -13265,7 +13274,8 @@ WGL_VIDEO_OUT_STACKED_FIELDS_1_2	./GL/wglew.h	/^#define WGL_VIDEO_OUT_STACKED_FI
 WGL_VIDEO_OUT_STACKED_FIELDS_2_1	./GL/wglew.h	/^#define WGL_VIDEO_OUT_STACKED_FIELDS_2_1 /;"	d
 WIN32_LEAN_AND_MEAN	./GL/wglew.h	/^#    define WIN32_LEAN_AND_MEAN /;"	d
 WINGDIAPI	./GL/glew.h	/^#define WINGDIAPI /;"	d
-WrongVirus	CMakeLists.txt	/^project(WrongVirus LANGUAGES CXX)$/;"	p
+WrongV1rus	README.md	/^# WrongV1rus$/;"	c
+WrongVirus	./CMakeLists.txt	/^project(WrongVirus LANGUAGES CXX)$/;"	p
 XOrigin	./GL/glxew.h	/^  int XOrigin; $/;"	m	struct:__anonb1a929810308	typeref:typename:int
 YCoCg2rgb	./glm/gtx/color_space_YCoCg.inl	/^	GLM_FUNC_QUALIFIER vec<3, T, Q> YCoCg2rgb$/;"	f	namespace:glm	typeref:typename:GLM_FUNC_QUALIFIER vec<3,T,Q>
 YCoCgR2rgb	./glm/gtx/color_space_YCoCg.inl	/^		static GLM_FUNC_QUALIFIER vec<3, T, Q> YCoCgR2rgb$/;"	f	class:glm::compute_YCoCgR	typeref:typename:GLM_FUNC_QUALIFIER vec<3,T,Q>	file:
@@ -22375,6 +22385,8 @@ glXWaitForSbcOML	./GL/glxew.h	/^#define glXWaitForSbcOML /;"	d
 glXWaitVideoSyncSGI	./GL/glxew.h	/^#define glXWaitVideoSyncSGI /;"	d
 glewExperimental	./GL/glew.h	/^GLEWAPI GLboolean glewExperimental;$/;"	v	typeref:typename:GLEWAPI GLboolean
 glewIsExtensionSupported	./GL/glew.h	/^#define glewIsExtensionSupported(/;"	d
+glm	./glm/CMakeLists.txt	/^	add_library(glm INTERFACE)$/;"	t
+glm	./glm/CMakeLists.txt	/^	add_library(glm$/;"	t
 glm	./glm/common.hpp	/^namespace glm$/;"	n
 glm	./glm/detail/_noise.hpp	/^namespace glm{$/;"	n
 glm	./glm/detail/_swizzle.hpp	/^namespace glm$/;"	n
@@ -22772,6 +22784,7 @@ glm	./glm/packing.hpp	/^namespace glm$/;"	n
 glm	./glm/simd/neon.h	/^namespace glm {$/;"	n
 glm	./glm/trigonometric.hpp	/^namespace glm$/;"	n
 glm	./glm/vector_relational.hpp	/^namespace glm$/;"	n
+glm-header-only	./glm/CMakeLists.txt	/^add_library(glm-header-only INTERFACE)$/;"	t
 glm_dvec2	./glm/simd/platform.h	/^	typedef glm_f64vec2		glm_dvec2;$/;"	t	typeref:typename:glm_f64vec2
 glm_dvec4	./glm/simd/platform.h	/^	typedef glm_f64vec4		glm_dvec4;$/;"	t	typeref:typename:glm_f64vec4
 glm_f32vec4	./glm/simd/platform.h	/^	typedef __m128			glm_f32vec4;$/;"	t	typeref:typename:__m128
